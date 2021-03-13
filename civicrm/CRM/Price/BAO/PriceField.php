@@ -552,7 +552,7 @@ class CRM_Price_BAO_PriceField extends CRM_Price_DAO_PriceField {
             if (isset($opt['help_post'])) {
               $postHelpText = ': <span class="crm-price-amount-help-post description">' . $opt['help_post'] . '</span>';
             }
-            $opt['label'] = '<span class="crm-price-amount-label">' . $opt['label'] . '</span>&nbsp;-&nbsp;';
+            $opt['label'] = '<span class="crm-price-amount-label">' . $opt['label'] . '</span>';
             if (isset($taxAmount) && $invoicing) {
               $opt['label'] .= self::getTaxLabel($opt, $valueFieldName, $displayOpt, $taxTerm);
             }
